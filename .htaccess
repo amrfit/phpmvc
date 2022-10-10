@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+
+    # rewrite engine settings:
+    RewriteEngine On
+    RewriteBase /
+    Options -Indexes
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+
+    # rewrite rules
+    RewriteRule ^articles/ index.php?c=articles [NC,L,QSA]
+    RewriteRule ^products/ index.php?c=products [NC,L,QSA]
+    RewriteRule ^product/?([0-9]*) index.php?c=product&id=$1 [NC,L,QSA]
+    RewriteRule ^admin/?([0-9a-zA-Z]*)/?([0-9a-zA-Z]*) index.php?c=admin&p=$1&a=$2 [NC,L,QSA]
+    RewriteRule ^login/ index.php?c=login [NC,L,QSA]
+    RewriteRule ^article/?([0-9]*) index.php?c=article&id=$1 [NC,L,QSA]
+    RewriteRule ^index/ index.php?c=index [NC,L,QSA]
+
+
+    ErrorDocument 404 "Page Not Found"
+
+
+</IfModule>

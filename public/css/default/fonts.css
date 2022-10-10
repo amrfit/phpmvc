@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'khoroosino';
+  src:  url('../../fonts/default/khoroosino.eot?xs3ztv');
+  src:  url('../../fonts/default/khoroosino.eot?xs3ztv#iefix') format('embedded-opentype'),
+    url('../../fonts/default/khoroosino.ttf?xs3ztv') format('truetype'),
+    url('../../fonts/default/khoroosino.woff?xs3ztv') format('woff'),
+    url('../../fonts/default/khoroosino.svg?xs3ztv#khoroosino') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'khoroosino' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.krs-paper:before {
+  content: "\e900";
+}
+.krs-search:before {
+  content: "\e901";
+}
+.krs-shopping:before {
+  content: "\e902";
+}
+.krs-star:before {
+  content: "\e903";
+}
+.krs-star-fill:before {
+  content: "\e904";
+}
+.krs-trash:before {
+  content: "\e905";
+}
+.krs-user:before {
+  content: "\e906";
+}
+.krs-add:before {
+  content: "\e907";
+}
+.krs-cart:before {
+  content: "\e908";
+}
+.krs-category:before {
+  content: "\e909";
+}
+.krs-edit:before {
+  content: "\e90a";
+}
+.krs-exit:before {
+  content: "\e90b";
+}
+.krs-eye:before {
+  content: "\e90c";
+}
+.krs-home:before {
+  content: "\e90d";
+}
+.krs-horn:before {
+  content: "\e90e";
+}
+.krs-info:before {
+  content: "\e90f";
+}
+.krs-like:before {
+  content: "\e910";
+}
+.krs-nav:before {
+  content: "\e911";
+}
